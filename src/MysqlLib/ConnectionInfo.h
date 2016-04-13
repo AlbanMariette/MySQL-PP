@@ -3,18 +3,18 @@
 #include <string>
 /*
 @class ConnectionInfo
-@brief classe representant des informations permettant une connexion à une base de donnée
+@brief class which represents an object containing connection information
 */
 class ConnectionInfo
 {
 public:
     /*
     @fn ConnectionInfo(std::string host, std::string user, std::string password, std::string dbName)
-    @params host une chaîne de caractère représentant l'hôte de la base de donnée
-            user le nom d'utilisateur permettant la connexion à la base de donnée
-            password le mot de passe permettant la connexion à la base de donnée
-            dbName le nom de la base sur laquelle on souhaite se connecter
-    @brief constructeur d'un objet contenant les informations nécessaires à une connexion à une base de donnée
+    @params host a string containing the host of the database
+            user a string containing the username used for database connection
+            password a string containing the password used for database connection
+            dbName a string containing the database name.
+    @brief constructor
     @return no return
     */
     ConnectionInfo(std::string host, std::string user, std::string password, std::string dbName) :
@@ -27,13 +27,13 @@ public:
     const std::string& GetPassword() const{return ci_password;}
     const std::string& GetDbName() const{return ci_dbName;}
 private:
-    /*l'hôte du serveur SQL*/
+    /*the sql server host name*/
     std::string ci_host;
-    /*le nom d'utilisateur*/
+    /*username*/
     std::string ci_user;
-    /*le mot de passe*/
+    /*password*/
     std::string ci_password;
-    /*le nom de la base de donnée*/
+    /*database name*/
     std::string ci_dbName;
 
 

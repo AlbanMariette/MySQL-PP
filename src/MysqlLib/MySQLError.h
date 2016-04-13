@@ -2,7 +2,7 @@
 #define MYSQL_ERROR_H
 /*
 @class MySQLError
-@brief classe representant une erreur ayant eu lieu dans la bibliotheque
+@brief classe which represents an error 
 */
 class MySQLError
 {

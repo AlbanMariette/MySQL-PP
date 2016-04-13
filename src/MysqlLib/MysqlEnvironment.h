@@ -9,8 +9,8 @@ namespace MYSQL_ENVIRONMENT
 {
     /*
      @fn bool init(std::string& error)
-     @params error reference sur une chaine de caractere qui sera remplie du message d'erreur si la fonction échoue à initialiser mysql
-     @brief methode qui initialise la bibliotheque mysql. Cette fonction doit être appelée dans le thread principal.
+     @params error a reference on a string which will be set with an error message if the initiation fail
+     @brief function which initialize the sql library. Must be call in the main thread.
      @return bool
      */
     bool init(std::string& error)
@@ -26,7 +26,7 @@ namespace MYSQL_ENVIRONMENT
     /*
      @fn void stop()
      @params no params
-     @brief methode qui arrete la bibliotheque mysql.
+     @brief function which stops the sql library.
      @return void
      */
     void stop()

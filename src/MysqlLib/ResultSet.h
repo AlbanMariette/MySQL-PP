@@ -8,7 +8,7 @@
 #include <iostream>
 /*
 @class Field
-@brief classe représentant un champ
+@brief classe representing a field
 */
 class Field
 {
